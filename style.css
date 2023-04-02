@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black:hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--off-white);
+}
+
+.hero{
+    padding: 2em;
+    background-color: var(--white);
+    border-radius: 30px 30px 200px 30px;
+}
+
+form{
+    display: flex;
+    gap: 2em;
+    opacity: 0.6;
+}
+
+.hero{
+    max-width: 600px;
+}
+
+input{
+    margin-top: 0.2em;
+    width: 80px;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+hr{
+    width: 100%;
+    height: 0px;
+    border-color: var(--smokey-grey);
+}
+
+.hr-arrow{
+    display: flex;
+    align-items: center;
+    margin: 1em 0em;
+}
+
+.arrow{
+    background-color: var(--purple);
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.big{
+    font-size: 4em;
+}
+
+.small{
+    margin-top: 1em;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.red{
+    border-color: var(--light-red);
+    color: var(--light-red);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.output{
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.letter-spacing{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.attribution{
+    margin-top: 1em;
+    text-align: center;
+    padding: 1em;
+}
+
+.hidden{
+    display: none;
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width: 430px){
+    .big{
+        font-size: 3em;
+    }
+    .input{
+        width: 60px;
+        font-size: 1.2em;
+    }
+    .letter-spacing{
+        font-size: 1em;
+    }
+
+    .mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 340px){
+    .big{
+        font-size: 2.5em;
+    }
+    .input{
+        width: 40px;
+        font-size: 1em;
+    }
+    .letter-spacing{
+        font-size: 0.8em;
+    }
+}
